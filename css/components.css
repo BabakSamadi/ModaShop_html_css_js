@@ -1,0 +1,59 @@
+/* ===== نوار اطلاعیه ===== */
+.announcement-bar {
+  position: relative;
+  background: var(--color-dark);
+  color: var(--color-text-inverse);
+  font-size: 0.875rem;
+}
+
+.announcement-bar[hidden] {
+  display: none;
+}
+
+/* پنجره: فقط یک پیام را نشان می‌دهد */
+.announcement-bar__viewport {
+  overflow: hidden;
+  margin-inline: 3rem; /* جا برای دکمه‌ی بستن */
+}
+
+/* ریل: پیام‌ها کنار هم، ردیفی */
+.announcement-bar__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* هر پیام دقیقاً به اندازه‌ی کل پنجره */
+.announcement-bar__item {
+  flex: 0 0 100%;
+  padding: var(--space-sm) 0;
+  text-align: center;
+}
+
+.announcement-bar__link {
+  margin-inline-start: var(--space-sm);
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.announcement-bar__link:hover {
+  color: var(--color-text-inverse);
+}
+
+.announcement-bar__close {
+  position: absolute;
+  inset-inline-end: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--radius-full);
+  color: var(--color-text-inverse);
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: background var(--transition);
+}
+
+.announcement-bar__close:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

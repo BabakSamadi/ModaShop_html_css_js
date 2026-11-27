@@ -1,0 +1,65 @@
+/* =========================================================
+   variables.css
+   تنها جایی که مقدارهای ثابت سایت (رنگ، فونت، فاصله، سایه)
+   تعریف می‌شوند. بقیه‌ی فایل‌ها فقط با var(...) می‌خوانند.
+   ========================================================= */
+
+:root {
+  /* ===== رنگ‌های پایه ===== */
+  --color-bg: #f6f4f0;           /* پس‌زمینه‌ی صفحه (استخوانی گرم) */
+  --color-surface: #ffffff;      /* کارت، هدر، فرم */
+  --color-surface-alt: #ece8e1;  /* بخش‌های متمایز، placeholder عکس */
+  --color-border: #ddd8cf;       /* خط‌ها و حاشیه‌ها */
+
+  /* ===== متن ===== */
+  --color-text: #1a1a1a;         /* متن اصلی */
+  --color-text-muted: #6b6760;   /* توضیحات و برچسب‌ها */
+  --color-text-inverse: #ffffff; /* متن روی پس‌زمینه‌ی تیره */
+
+  /* ===== رنگ برند ===== */
+  --color-primary: #1a1a1a;      /* دکمه‌ی اصلی */
+  --color-primary-hover: #333333;
+  --color-accent: #a67c52;       /* مسی؛ hover و تأکید */
+  --color-accent-hover: #8a6540;
+  --color-dark: #14181f;         /* فوتر و بنر تیره */
+
+  /* ===== رنگ‌های وضعیت ===== */
+  --color-success: #2f7d4f;
+  --color-warning: #c78a1d;
+  --color-danger: #c0392b;
+  --color-sale: #b3261e;         /* برچسب تخفیف */
+
+  /* ===== رنگ‌های فیلتر محصول ===== */
+  --swatch-black: #1a1a1a;
+  --swatch-white: #f5f5f5;
+  --swatch-navy: #1f2a44;
+  --swatch-gray: #8a8d91;
+  --swatch-beige: #d9c8a9;
+  --swatch-olive: #5b6240;
+  --swatch-brown: #6b4a32;
+  --swatch-blue: #3b6ea5;
+
+  /* ===== فونت ===== */
+  --font-main: "Vazirmatn", system-ui, sans-serif;
+
+  /* ===== گوشه‌ها ===== */
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* ===== فاصله‌ها ===== */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 3rem;
+  --gap: 1.5rem;
+
+  /* ===== سایه ===== */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.10);
+
+  /* ===== انیمیشن ===== */
+  --transition: 0.2s ease;
+}
